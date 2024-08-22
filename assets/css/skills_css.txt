@@ -1,0 +1,32 @@
+
+
+
+//new 
+.skills__container {
+  display: flex;
+  gap: 4rem;
+}
+
+.skills__content {
+  max-height: 400px; /* Adjust as needed */
+  overflow-y: auto;
+}
+
+.skills__img {
+  max-height: 400px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.skills__data-small { /* Apply this class to each .skills__data element */
+  width: 200px; /* Adjust as needed */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .skills__container {
+      flex-direction: column; /* Stack elements vertically */
+  }
+  .skills__img {
+      width: 100%;
+  }
+}
